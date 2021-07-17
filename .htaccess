@@ -1,0 +1,4 @@
+# https
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://emaleesoddy.com/$1 [R,L]
