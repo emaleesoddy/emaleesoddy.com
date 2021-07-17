@@ -1,20 +1,10 @@
-/* http://emaleesoddy.com
-   just a simple theme
-   unlicensed
-*/
-
-/* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,700|Montserrat');
-
-*, *:before, *:after {
-    -webkit-font-smoothing: antialiased;
-}
+*, *:before, *:after { -webkit-font-smoothing: antialiased; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,48 +32,31 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-
-body {
-    line-height: 1;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-blockquote, q {
-    quotes: none;
-}
-
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
-
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-
-/* Basics */
-
+/* http://emaleesoddy.com
+   just a simple theme
+   unlicensed
+*/
 html, body {
     font: 300 16px/24px 'Merriweather', Georgia, "Times New Roman", Times, serif;
     color: #fff;
     background-color: #090F0D;
     overflow-x: hidden;
 }
-
-i, em {
-    font-style: italic;
-}
-
-a {
-    text-decoration: none;
-}
-
+i, em { font-style: italic; }
+a { text-decoration: none; }
 a[target="_blank"]:after,
 a[href^="http://"]:after,
 a[href^="https://"]:after {
@@ -91,13 +64,11 @@ a[href^="https://"]:after {
     margin-left: 1px;
     content: "↗";
 }
-
 a.svg {
     position: relative;
     display: inline-block;
     line-height: 100%;
 }
-
 a.svg:after {
     content: "";
     position: absolute;
@@ -107,99 +78,71 @@ a.svg:after {
     bottom: 0;
     left: 0;
 }
-
 .container {
     width: 100%;
     margin: 0 auto;
     max-width: 800px;
 }
-
 .container::after {
     content: "";
     clear: both;
     display: table;
 }
-
 #content, #header {
     background: #fff;
     color: #000;
 }
-
-/* Typography */
 h1 {
     padding: 3rem 0;
     text-align: center;
     font-family: 'Montserrat', "Lucida Grande", Helvetica, Verdana, Arial, sans-serif;
     font-size: 22px;
 }
-h1 a {
-    color:#000;
-}
-
+h1 a { color:#000; }
 p {
     margin-bottom: 1rem;
     line-height: 2rem;
 }
-
-/* Footer */
 #footer {
     padding: 2rem 0;
     font-size: 12px;
     font-family: 'Montserrat', "Lucida Grande", Helvetica, Verdana, Arial, sans-serif;
 }
-
-#footer .footer-padding {
-    padding: 0 0.5rem;
-}
-
-#footer a {
-    color: #fff;
-}
-
+#footer .footer-padding {  padding: 0 0.5rem; }
+#footer a { color: #fff; }
 #social {
     font-size: 22px;
     float: left;
     text-align: left;
     word-spacing: 10px;
 }
-
 #badges {
     font-size: 22px;
     float: right;
     text-align: right;
     word-spacing: 10px;
 }
-
-/* Content */
 #content {
     margin-top: -1px;
     padding-bottom: 3rem;
 }
-
 #content .headshot {
     float: right;
     margin-left: 30px;
     width: 250px;
 }
-
 #content a {
     color: #000;
     transition: all 0.25s linear;
     border-bottom: 3px solid #ABF379;
     box-shadow: inset 0 -2px 0 #ABF379;
 }
-
 #content a:hover {
     color: #000;
     border-bottom: 3px solid #B8B8B8;
     box-shadow: inset 0 -2px 0 #B8B8B8;
 }
-
 #content img {
     max-width: 100%;
     height: auto;
-}
-
-.bloglovin {
-    font-size: 11px;
 }
