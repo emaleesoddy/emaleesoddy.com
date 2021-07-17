@@ -1,24 +1,10 @@
-/*
-Theme Name: emaleesoddy
-Theme URI: http://emaleesoddy.com
-Author: Emalee Soddy
-Author URI: https://emaleesoddy.com
-Description: A simple theme for emaleesoddy.com
-Version: 1.0
-*/
-
-/* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,700|Montserrat');
-@import url('https://use.fontawesome.com/releases/v5.8.0/css/all.css');
-*, *:before, *:after {
-    -webkit-font-smoothing: antialiased;
-}
+*, *:before, *:after { -webkit-font-smoothing: antialiased; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -38,22 +24,17 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    line-height:100%;
+    line-height: 100%;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
@@ -64,284 +45,104 @@ table {
     border-spacing: 0;
 }
 
-
-/* Basics */
-
-html,body {
+/* http://emaleesoddy.com
+   just a simple theme
+   unlicensed
+*/
+html, body {
     font: 300 16px/24px 'Merriweather', Georgia, "Times New Roman", Times, serif;
     color: #fff;
     background-color: #090F0D;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
-i,em {
-    font-style:italic;
-}
-a {
-    text-decoration:none;
-}
+i, em { font-style: italic; }
+a { text-decoration: none; }
 a[target="_blank"]:after,
- a[href^="http://"]:after,
- a[href^="https://"]:after {
-    display:inline-block;
-    margin-left:1px;
-     content: "↗";
- }
-a[href^="https://emaleesoddy.com"]:after,
-a[href^="https://emalee.dev"]:after,
-a[href^="https://wickedleaf.com"]:after,
-a[href^="http://emaleesoddy.com"]:after,
-a[href^="http://emalee.dev"]:after,
-a[href^="http://wickedleaf.com"]:after,
-a.noext:after {
-    content: initial;
-    display:initial;
-    margin:initial;
+a[href^="http://"]:after,
+a[href^="https://"]:after {
+    display: inline-block;
+    margin-left: 1px;
+    content: "↗";
 }
 a.svg {
     position: relative;
     display: inline-block;
-    line-height:100%;
+    line-height: 100%;
 }
 a.svg:after {
     content: "";
     position: absolute;
-    line-height:100%;
+    line-height: 100%;
     top: 0;
     right: 0;
     bottom: 0;
-    left:0;
+    left: 0;
 }
 .container {
-    width:100%;
-    margin:0 auto;
-    max-width:800px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 800px;
 }
 .container::after {
     content: "";
     clear: both;
     display: table;
 }
-#content,#header {
+#content, #header {
     background: #fff;
     color: #000;
 }
-
-/* Typography */
-h1,h2,h3,h4,h5,h6 {
-    font-family:'Montserrat',"Lucida Grande",Helvetica, Verdana, Arial, sans-serif;
-}
-h2,h3,h4,h5,h6 {
-    margin-top:2rem;
-    margin-bottom:1rem;
-}
-h1 { font-size: 38px; }
-h2 { font-size: 28px; margin-top:0;}
-h3 { font-size: 22px; }
-h4 { font-size: 18px; }
-h5 { font-size: 16px; }
-h6 { font-size: 16px; }
-strong,b {
-    font-weight:700;
-}
-p { margin-bottom:1rem; line-height:2rem; }
-p.intro {
-    margin-bottom:0;
-    padding:0 0.5rem;
-}
-/* Header */
-#header {
-    padding:3rem 0;
-    text-align:center;
-    font-family:'Montserrat',"Lucida Grande",Helvetica, Verdana, Arial, sans-serif;
-
-}
-#header h1 {
+h1 {
+    padding: 3rem 0;
+    text-align: center;
+    font-family: 'Montserrat', "Lucida Grande", Helvetica, Verdana, Arial, sans-serif;
     font-size: 22px;
 }
-#header a {
-    color:#000;
-  }
-.menu-main-container {
-    margin-top:1rem;
-    font-size:12px;
+h1 a { color:#000; }
+p {
+    margin-bottom: 1rem;
+    line-height: 2rem;
 }
-#header ul, #header li {
-    display:inline-block;
-    margin:0 0.5rem;
-}
-/* Footer */
 #footer {
     padding: 2rem 0;
-    font-size:12px;
-    font-family:'Montserrat',"Lucida Grande",Helvetica, Verdana, Arial, sans-serif;
+    font-size: 12px;
+    font-family: 'Montserrat', "Lucida Grande", Helvetica, Verdana, Arial, sans-serif;
 }
-#footer .footer-padding {
-    padding:0 0.5rem;
-}
-#footer a {
-    color:#fff;
-}
-#footer #copy {
-    margin-right:2rem;
-}
-#footer #copy,
-#footer #footer-menu {
-    float:left;
-    line-height:20px;
-
-}
-#footer ul {
-    display:inline;
-}
-#footer li {
-    display:inline-block;
-    margin:0 0.5rem;
-    line-height:20px;
-}
+#footer .footer-padding {  padding: 0 0.5rem; }
+#footer a { color: #fff; }
 #social {
-    font-size:18px;
-    float:right;
-    text-align:right;
+    font-size: 22px;
+    float: left;
+    text-align: left;
+    word-spacing: 10px;
 }
-
-/* Content */
+#badges {
+    font-size: 22px;
+    float: right;
+    text-align: right;
+    word-spacing: 10px;
+}
 #content {
     margin-top: -1px;
-    padding-bottom:3rem;
+    padding-bottom: 3rem;
 }
 #content .headshot {
-    float:right;
-    margin-left:30px;
-    width:250px;
+    float: right;
+    margin-left: 30px;
+    width: 250px;
 }
 #content a {
-    color:#000;
+    color: #000;
     transition: all 0.25s linear;
     border-bottom: 3px solid #ABF379;
     box-shadow: inset 0 -2px 0 #ABF379;
 }
 #content a:hover {
-    color:#000;
+    color: #000;
     border-bottom: 3px solid #B8B8B8;
     box-shadow: inset 0 -2px 0 #B8B8B8;
 }
-#content .meta a,
-#content .tags a,
-#content a.noborder {
-    color:#000;
-    border-bottom:0;
-    box-shadow:none;
-}
 #content img {
-    max-width:100%;
-    height:auto;
-}
-#content ul, #content ol {
-	display:block;
-    margin: 0 0 0 1.5rem;
-}
-#content li {
-    margin:1rem 0 1rem 0;
-    line-height:2rem;
-}
-#content li li {
-    margin:0;
-}
-#content ul > li {
-	list-style:disc;
-}
-#content ol > li {
-	list-style:decimal;
-}
-
-#content #sya_container ul {
-    margin:0;
-}
-
-#content #sya_container ul li {
-    list-style:none;
-    margin:1rem auto;
-    line-height:2rem;
-}
-.excerpt {
-    border-bottom:3px solid #eee;
-    padding:2rem 0.5rem;
-}
-.excerpt:first-child {
-    padding-top:0;
-}
-.excerpt:last-child {
-    border-bottom:0;
-    padding-bottom:0;
-}
-.excerpt p {
-    margin-bottom:0;
-}
-.excerpt h2 {
-    margin-top:0.5rem;
-}
-.excerpt .meta {
-    font-size:12px;
-    opacity:0.4;
-}
-
-.featured-image {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    height:300px;
-    background-image:url('/wp-content/uploads/2019/03/moss.png');
-    background-size:cover;
-    background-position:center center;
-}
-.featured-image .title {
-    padding:10px;
-    position:absolute;
-    bottom:10px;
-    color:#fff;
-    text-shadow: 0px 0px 10px #000;
-}
-#article {
-    padding:0 0.5rem;
-}
-#article p:last-child {
-    margin-bottom:0;
-}
-#article .meta {
-    font-size:12px;
-    margin-top:10px;
-    margin-bottom:20px;
-}
-.tags {
-    font-size:12px;
-    margin-bottom:0;
-    margin-top:40px;
-}
-#article blockquote {
-	border-left:5px solid #090F0D;
-	padding-left:2rem;
-	margin:2rem 0;
-}
-#article blockquote p {
-	font-style:italic;
-}
-#article cite {
-	font-size:.9rem;
-	color:#888;
-	line-height:2rem;
-}
-.wp-block-column {
-    margin-bottom:0 !important;
-}
-.overlay {
-    background:rgba(0,0,0,0.75);
-    color:#000;
-    width:100%;
-    height:100%;
-}
-.bloglovin {
-    font-size:11px;
+    max-width: 100%;
+    height: auto;
 }
