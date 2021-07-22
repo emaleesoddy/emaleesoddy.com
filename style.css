@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,700|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,700|Montserrat');
 *, *:before, *:after { -webkit-font-smoothing: antialiased; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -50,12 +50,13 @@ table {
    unlicensed
 */
 html, body {
-    font: 300 16px/24px 'Merriweather', Georgia, "Times New Roman", Times, serif;
+    font: 300 14px/20px 'Merriweather', Georgia, "Times New Roman", Times, serif;
     color: #fff;
     background-color: #090F0D;
     overflow-x: hidden;
 }
 i, em { font-style: italic; }
+strong, b { font-weight:400; }
 a { text-decoration: none; }
 a[target="_blank"]:after,
 a[href^="http://"]:after,
@@ -98,7 +99,14 @@ h1 {
     font-family: 'Montserrat', "Lucida Grande", Helvetica, Verdana, Arial, sans-serif;
     font-size: 22px;
 }
-h1 a { color:#000; }
+a h1 { color:#000; }
+h2 { font-size:20px; }
+h3 { font-size:18px; }
+h3 { font-size:16px; }
+h2,h3,h4 {
+    font-family: 'Montserrat', "Lucida Grande", Helvetica, Verdana, Arial, sans-serif;
+    margin-bottom:1rem;
+}
 p {
     margin-bottom: 1rem;
     line-height: 2rem;
@@ -126,10 +134,28 @@ p {
     margin-top: -1px;
     padding-bottom: 3rem;
 }
+hr {
+    margin:1.5rem auto;
+    width:80%;
+    border:none;
+    background:#eee;
+    height:1px;
+}
+small {
+    color:#888;
+}
+ul {
+    margin: 1rem 3rem 2rem;
+    list-style: circle;
+}
+li {
+    margin:1rem 0;
+}
 #content .headshot {
     float: right;
     margin-left: 30px;
     width: 250px;
+    margin-top:15px;
 }
 #content a {
     color: #000;
